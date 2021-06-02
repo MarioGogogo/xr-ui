@@ -75,3 +75,4 @@
 .xr-menu > .xr-menu-item > .xr-switch:checked::after {
   left: 1.2rem;
   transition: left .3s;/*按钮移动的过度效果*/
+}
