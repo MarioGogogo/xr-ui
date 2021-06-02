@@ -1,0 +1,42 @@
+.xr-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* 根据header和navbar自适应高度 */
+.xr-header ~ .xr-content {
+  padding-top: 2.3rem;
+}
+
+.xr-navbar ~ .xr-content {
+  padding-bottom: 2.5rem;
+}
+
+
+/* 内容 Panel面板 */
+.xr-content .xr-panel-title{
+   height: 1.8rem;
+   line-height: 1.8rem;
+   padding-left: 1rem;
+   color: #aaa;
+   background-color: #fff;
+   border-top: 1px solid #eee;
+   font-size: 14px;
+   font-weight: normal;
+}
+
+.xr-content .xr-panel-body{
+  position: relative;
+  margin-bottom: .6rem;
+  padding: .6rem 1rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* 可手动设置内容区是否有内边距 */ 
+.xr-content .xr-panel-body.no-padding{
+  padding: 0;
+ }

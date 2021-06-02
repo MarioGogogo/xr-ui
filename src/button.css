@@ -1,0 +1,50 @@
+.xr-btn {
+  display: block;
+  position: relative;
+  width: 10rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 0.7rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none; /* 用户不能对按钮的内容进行选中，防止因用户按住按钮太久而导致出现文本选择的选 项。 */
+}
+
+/* 定制主操作按钮样式 */
+.xr-btn.xr-btn-primary {
+  background-color: #1aad19;
+  color: #fff;
+}
+
+/* 定制警示类按钮样式 */
+.xr-btn.xr-btn-warning {
+  background-color: #e64340;
+  color: #fff;
+}
+/* 定制不可用按钮的样式 */
+.xr-btn.xr-btn-disabled {
+  background-color: #f7f7f7;
+  color: #999;
+  opacity: 0.6;
+}
+
+.xr-btn.xr-btn-large {
+  width: 100%;
+  font-size: 0.9rem;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+.xr-btn.xr-btn-small {
+  width: 3rem;
+  font-size: 0.3rem;
+  padding: 0.2rem 0;
+  display: inline-block;
+}

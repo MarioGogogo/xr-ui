@@ -1,0 +1,77 @@
+/* 菜单项 */
+.xr-menu > .xr-menu-item {
+  display: flex;
+  height: 2.3rem;
+  padding: 0 1rem;
+  align-items: center; /*上下居中 */
+  border-bottom: 1px solid #eee;
+  font-size: 0.8rem;
+}
+
+/* 菜单名称 */
+.xr-menu > .xr-menu-item > .xr-menu-name {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+/* 菜单信息 */
+
+.xr-menu > .xr-menu-item > .xr-menu-value {
+  max-width: 5rem;
+  height: 1rem;
+  line-height: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+
+/* 下级操作引导图标 */
+.xr-menu > .xr-menu-item > .xr-menu-icon {
+  margin-left: 0.3rem;
+  color: #999;
+}
+
+/* 切换开关 */
+.xr-menu > .xr-menu-item > .xr-switch {
+  position: relative;
+  box-sizing: content-box;
+  width: 2.6rem;
+  height: 1.4rem;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color .3s, border .3s; /*按钮渐变的过度效果*/
+  /* 去掉webkit内核里默认的样式 */
+  -webkit-appearance: none;
+  /* 去掉webkit内核里默认的点击效果 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 选中状态 改变边框颜色 */
+.xr-menu > .xr-menu-item > .xr-switch:checked {
+  border-color: #07c160;
+  background-color: #07c160;
+}
+
+/* 使用::after伪元素实现圆形按钮的样式 */
+.xr-menu > .xr-menu-item > .xr-switch::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 0.7rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px #999;
+  transition: left .3s;  /*按钮移动的过度效果*/
+}
+/* 选中状态下，更改圆形按钮的位置 */
+.xr-menu > .xr-menu-item > .xr-switch:checked::after {
+  left: 1.2rem;
+  transition: left .3s;/*按钮移动的过度效果*/

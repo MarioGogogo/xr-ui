@@ -1,0 +1,62 @@
+/* 文章组件 */
+.xr-article {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+/* 文章被折叠的情况 */
+.xr-article.fold {
+  height: 500px;   
+  max-height: 100%; /*这里用的 max-height 而没有用 height 是因为当文本内容占不满整屏高度的话，也不会留出空白*/
+  overflow: hidden;
+}
+
+/* 展开按钮 */
+.xr-article .xr-article-unfold-btn {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5rem;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e0652f;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #fff 100%);
+}
+
+/* 控制展开按钮的显示 */
+.xr-article.fold .xr-article-unfold-btn {
+  display: block;
+}
+
+.xr-article .xr-article-title {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.xr-article .xr-article-info {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+.xr-article .xr-article-subtitle {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+/* 文章段落 */
+.xr-article .xr-article-paragraph {
+  margin: 0.5rem 0 1rem;
+}
+.xr-article .xr-article-img {
+  max-width: 100%;
+  margin: auto;
+}

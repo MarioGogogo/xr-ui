@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/xr-ui.css" />
+    <title>搜索组件</title>
+  </head>
+  <body>
+    <!-- 头部 -->
+    <div class="xr-header">
+      <div class="xr-header-left"><i class="fa fa-chevron-left"></i>返回</div>
+      <div class="xr-header-title">👌🏻我是🎆✈️🇫🇯标题</div>
+      <div class="xr-header-right">
+        <i class="fa fa-ellipsis-h"></i>
+      </div>
+    </div>
+    <div class="xr-content">
+      <!-- 带suggest的搜索框 -->
+      <div class="xr-search on-focus">
+        <!-- 搜索框 -->
+        <form class="xr-search-form" action="#">
+          <div class="xr-search-input-wrap">
+            <i class="fa fa-search xr-search-icon"></i>
+            <input
+              type="text"
+              class="xr-search-input"
+              placeholder="搜索"
+              autocomplete="off"
+              required
+            />
+            <!-- 一键清空 -->
+            <i class="fa fa-times xr-search-clear"></i>
+          </div>
+          <span class="xr-search-cancel">取消</span>
+        </form>
+        <!-- 搜索建议 -->
+        <ul class="xr-search-suggest ">
+          <li class="xr-suggest-item">手机</li>
+          <li class="xr-suggest-item">iPhone XS Max</li>
+          <li class="xr-suggest-item">华为P30</li>
+          <li class="xr-suggest-item">小米 MIX3</li>
+          <li class="xr-suggest-item">诺基亚1110</li>
+        </ul>
+      </div>
+      <p class="content">内容区</p>
+    </div>
+  </body>
+</html>

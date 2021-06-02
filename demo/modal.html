@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/xr-ui.css" />
+    <title>模态框</title>
+  </head>
+  <body>
+    <!-- 头部导航 -->
+    <div class="xr-header">
+      <div class="xr-header-left"><i class="fa fa-chevron-left"></i></div>
+      <div class="xr-header-title">XRUI-模态框</div>
+      <div class="xr-header-right">
+        <i class="fa fa-ellipsis-h"></i>
+      </div>
+    </div>
+    <!-- 底部导航 -->
+    <div class="xr-navbar">
+      <a class="xr-navbar-item">
+        <i class="fa fa-home icon"></i>
+        <span class="name">首页</span>
+      </a>
+      <a class="xr-navbar-item active">
+        <i class="fa fa-list icon"></i>
+        <span class="name">分类</span>
+      </a>
+      <a class="xr-navbar-item">
+        <i class="fa fa-search icon"></i>
+        <span class="name">发现</span>
+      </a>
+      <a class="xr-navbar-item">
+        <i class="fa fa-user icon"></i>
+        <span class="name">我的</span>
+      </a>
+    </div>
+    <!-- 中间内容区域 -->
+    <div class="xr-content">内容区域</div>
+    <!-- 模态框 -->
+    <div class="xr-modal show">
+      <div class="xr-mask"></div>
+      <div class="xr-modal-wrap">
+        <div class="xr-modal-body">
+          <p>您的会员即将到期，请及时续费，以免影响您的权益.</p>
+        </div>
+        <div class="xr-modal-footer">
+           <a class="xr-btn">下次再说</a>
+          <a class="xr-btn">立即续费</a>
+         <!-- <a class="xr-btn">我知道了</a>  -->
+        </div>
+        <!-- <div class="xr-modal-body no-padding">
+          <img class="xr-modal-img" src="../image/modal-test.png" alt="t[">
+        </div>
+        <i class="fa fa-times xr-modal-close"></i> -->
+      </div>
+    </div>
+  </body>
+</html>

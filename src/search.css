@@ -1,0 +1,121 @@
+.xr-search {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+.xr-search.on-focus {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+/* 处理有标题栏的情况 */
+.xr-header ~ .xr-content .xr-search.on-focus {
+  top: 2.3rem;
+}
+/* 处理有导航栏的情况 */
+.xr-navbar ~ .xr-content .xr-search.on-focus {
+  bottom: 2.5rem;
+}
+
+.xr-search > .xr-search-form {
+  display: flex;
+  height: 2.3rem;
+  align-items: center;
+}
+
+.xr-search > .xr-search-form > .xr-search-input-wrap {
+  flex: 1;
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+.xr-search > .xr-search-form > .xr-search-cancel {
+  flex: 0 0 2.2rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  /* display: none; */
+}
+
+/* 对取消按钮的控制 */
+.xr-search.on-focus > .xr-search-form > .xr-search-cancel {
+  display: block;
+}
+
+/* 搜索图标 */
+.xr-search .xr-search-icon {
+  position: absolute;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.7rem;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #ccc;
+}
+
+/* 输入框的样式 */
+
+.xr-search .xr-search-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1.6rem;
+  border: none;
+  font-size: 0.8rem;
+  padding-left: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+/* 清空按钮样式 */
+
+.xr-search .xr-search-clear {
+  position: absolute;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 0.8rem;
+  font-size: 0.6rem;
+  top: 0;
+  bottom: 0;
+  right: 1rem;
+  margin: auto 0;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ccc;
+  display: none;
+}
+
+/* 对清空按钮的控制 */
+.xr-search.on-focus .xr-search-input:valid + .xr-search-clear {
+  display: block;
+}
+
+.xr-search .xr-search-clear::before{
+  display: flex;
+  justify-content: center;
+}
+
+/* 搜索建议 */
+.xr-search > .xr-search-suggest{
+   display: none;
+}
+
+.xr-search.on-focus > .xr-search-suggest{
+   display: block;
+}
+
+/* 搜索表单内容 */
+.xr-search > .xr-search-suggest > .xr-suggest-item{
+   padding-left: 1rem;
+   height: 2rem;
+   line-height: 2rem;
+   font-size: .8rem;
+   background: #fff;
+   border-bottom: 1px solid #eee;
+   color: #333;
+}

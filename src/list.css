@@ -1,0 +1,115 @@
+/* 列表里每一行的容器 */
+.xr-list > .xr-list-item {
+  display: flex;
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+/* 列表图片容器 */
+.xr-list .item-img-wrap {
+  flex: 0 0 5rem;
+  height: 5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+/* 列表中的图片 */
+.xr-list .item-img-wrap > .item-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 列表文字 */
+.xr-list .item-content-wrap {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 超过二行截断 */
+/* div {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+} */
+
+/* 列表项的标题 */
+.xr-list .item-content-wrap > .item-title {
+  height: 2rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.xr-list .item-content-wrap > .item-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0652f;
+}
+
+/* 列表描述 */
+.xr-list .item-content-wrap > .item-desc {
+  color: #999;
+  font-size: 0.7rem;
+}
+
+/* grid列表模式 */
+.xr-list.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+}
+/* grid列表 */
+.xr-list.grid > .xr-list-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding:.5rem;
+  border-right: 1px solid #eee;
+}
+
+.xr-list.grid > .xr-list-item:nth-child(2n) {
+  border-right: none;
+}
+/* grid文字描述 */
+.xr-list.grid .item-content-wrap > .item-title {
+  padding-top: .2rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/* grid图片 */
+.xr-list.grid .item-img-wrap {
+  margin-right: 0;
+}
+
+.xr-list .item-content-wrap > .item-price.diff{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;  /* 父级 第一行文本基准线 */
+}
+
+.xr-list .item-content-wrap > .item-price.diff > .price-old{
+  color: #999;
+  font-size: 0.7rem;
+  padding-left: .2rem;
+  text-decoration:line-through;
+}
