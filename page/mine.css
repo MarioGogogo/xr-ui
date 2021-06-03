@@ -1,0 +1,55 @@
+.page-mine .user {
+  display: flex;
+  padding: 1rem 0.8rem;
+  background-color: #fff;
+}
+
+/* 头像 */
+.page-mine .user > .portrait {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.page-mine .user > .info {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.page-mine .user > .info > .nick-name {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/* 关注和收藏 */
+.page-mine .user .detail-item {
+  color: #aaa;
+  font-size: 0.7rem;
+}
+.page-mine .user .detail-item + .detail-item {
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid #ddd;
+
+}
+
+.xr-menu{
+  background-color: #fff;
+}
+
+/* 退出按钮 */
+.page-mine .logout-btn {
+  border: none;
+  background-color: #fff;
+
+}
+
+/* 调整间距 */
+.page-mine .yp-category {
+  margin-bottom: 0.5rem;
+}
+

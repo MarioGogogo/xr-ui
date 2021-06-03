@@ -11,7 +11,131 @@
     <link rel="stylesheet" href="./index.css" />
     <title>西软优品-首页</title>
   </head>
-  <body>
+  <body class="page-index">
+    <div class="xr-content">
+      <!-- 带suggest的搜索框 -->
+       <div class="xr-search"> 
+        <!-- 搜索中的状态 -->
+        <!-- <div class="xr-search on-focus"> -->
+        <!-- 搜索框 -->
+        <form class="xr-search-form" action="#">
+          <div class="xr-search-input-wrap">
+            <i class="fa fa-search xr-search-icon"></i>
+            <input
+              type="text"
+              class="xr-search-input"
+              placeholder="搜索"
+              autocomplete="off"
+              required
+            />
+            <!-- 一键清空 -->
+            <i class="fa fa-times xr-search-clear"></i>
+          </div>
+          <span class="xr-search-cancel">取消</span>
+        </form>
+        <!-- 搜索建议 -->
+        <ul class="xr-search-suggest">
+          <li class="xr-suggest-item">手机</li>
+          <li class="xr-suggest-item">iPhone XS Max</li>
+          <li class="xr-suggest-item">华为P30</li>
+          <li class="xr-suggest-item">小米 MIX3</li>
+          <li class="xr-suggest-item">诺基亚1110</li>
+        </ul>
+      </div>
+      <!-- 文章分类 -->
+      <div class="xr-grid multi-4 no-border yp-category">
+        <div class="xr-grid-item item-1">
+          <i class="fa fa-female xr-grid-icon"></i>
+          <p class="xr-grid-label">女装</p>
+        </div>
+        <div class="xr-grid-item item-2">
+          <i class="fa fa-book xr-grid-icon"></i>
+          <p class="xr-grid-label">图书</p>
+        </div>
+        <div class="xr-grid-item item-3">
+          <i class="fa fa-briefcase xr-grid-icon"></i>
+          <p class="xr-grid-label">箱包</p>
+        </div>
+        <div class="xr-grid-item item-4">
+          <i class="fa fa-diamond xr-grid-icon"></i>
+          <p class="xr-grid-label">珠宝首饰</p>
+        </div>
+        <div class="xr-grid-item item-5">
+          <i class="fa fa-soccer-ball-o xr-grid-icon"></i>
+          <p class="xr-grid-label">体育用品</p>
+        </div>
+        <div class="xr-grid-item item-6">
+          <i class="fa fa-tv xr-grid-icon"></i>
+          <p class="xr-grid-label">电视</p>
+        </div>
+        <div class="xr-grid-item item-7">
+          <i class="fa fa-mobile-phone xr-grid-icon"></i>
+          <p class="xr-grid-label">手机</p>
+        </div>
+        <div class="xr-grid-item item-8">
+          <i class="fa fa-print xr-grid-icon"></i>
+          <p class="xr-grid-label">打印设备</p>
+        </div>
+      </div>
+      <!-- 猜你喜欢 -->
+      <h1 class="xr-panel-title">
+        猜你喜欢
+        <a href="./list.html" class="xr-panel-link">查看更多>></a>
+      </h1>
+      <div class="xr-panel-body no-padding">
+        <div class="xr-list">
+          <a href="./article.html" class="xr-list-item">
+            <div class="item-img-wrap">
+              <img class="item-img" src="img/list-img.png" alt="旅行必不可少" />
+            </div>
+            <div class="item-content-wrap">
+              <h1 class="item-title">
+                大美新疆 | 玩遍这片大好山河，这些装备必不可少
+              </h1>
+              <p class="item-desc">发布时间:2019-8-18</p>
+              <p class="item-desc">阅读1923次 | 收藏398次</p>
+            </div>
+          </a>
+          <a href="./article.html" class="xr-list-item">
+            <div class="item-img-wrap">
+              <img class="item-img" src="img/list-img.png" alt="旅行必不可少" />
+            </div>
+            <div class="item-content-wrap">
+              <h1 class="item-title">
+                大美新疆 | 玩遍这片大好山河，这些装备必不可少
+              </h1>
+              <p class="item-desc">发布时间:2019-8-18</p>
+              <p class="item-desc">阅读1923次 | 收藏398次</p>
+            </div>
+          </a>
+          <a href="./article.html" class="xr-list-item">
+            <div class="item-img-wrap">
+              <img class="item-img" src="img/list-img.png" alt="旅行必不可少" />
+            </div>
+            <div class="item-content-wrap">
+              <h1 class="item-title">
+                大美新疆 | 玩遍这片大好山河，这些装备必不可少
+              </h1>
+              <p class="item-desc">发布时间:2019-8-18</p>
+              <p class="item-desc">阅读1923次 | 收藏398次</p>
+            </div>
+          </a>
+          <a href="./article.html" class="xr-list-item">
+            <div class="item-img-wrap">
+              <img class="item-img" src="img/list-img.png" alt="旅行必不可少" />
+            </div>
+            <div class="item-content-wrap">
+              <h1 class="item-title">
+                大美新疆 | 玩遍这片大好山河，这些装备必不可少
+              </h1>
+              <p class="item-desc">发布时间:2019-8-18</p>
+              <p class="item-desc">阅读1923次 | 收藏398次</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- 底部导航条 -->
     <div class="xr-navbar">
       <a class="xr-navbar-item active">
